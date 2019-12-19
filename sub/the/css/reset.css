@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: auto;
+    font-family: Rix고딕 UL, 나눔스퀘어;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    
+}
+
+ul, ol, li, dd, dt, dh {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}

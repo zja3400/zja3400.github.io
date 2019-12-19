@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container{margin-right:auto;margin-left:auto;padding-left:10px;padding-right:10px; z-index:1000;}
+.container>.cont, .masonry{overflow:hidden; position:relative; left:10%; width:960px; height:500px;}
+.container:before,.container:after{content:" ";display:table}
+.container:after{clear:both}
+.container{margin-top:100px}
+.cont{margin:0 auto 42px}
+.boxm{position:relative;padding:20px;font-size:11px;line-height:1.4em}
+.boxm.col1{width:240px}
+.boxm.col2{width:480px}
+.boxm.col2 .default{overflow:hidden;width:440px;height:440px;background-size:100% 100%;}
+.cutter{width:100%;height:100%;background-repeat:no-repeat;background-position:center center;background-size:100% 100%;text-indent:-9999px}
+.cutter .cover,.cutter .default{width:200px;height:200px;background-repeat:no-repeat; border-radius:100%;}
+.cutter .cover{position:absolute;top:20px;left:20px;background-position:-200px 0;-moz-border-radius:100%;-webkit-border-radius:100%;z-index:80}
+
+.cutter.chicken .cover{background-image:url(../img/benz_in2_cover.png); z-index:100;}
+.cutter.chicken .default{background-image:url(../img/benz_in.png); z-index:80;}
+.cutter.chinese .cover{background-image:url(../img/benz_in2_cover2.png); z-index:100;}
+.cutter.chinese .default{background-image:url(../img/benz_in2.png);z-index:80;}
+.cutter.pizza .cover{background-image:url(../img/benz_in2_cover3.png); z-index:100;}
+.cutter.pizza .default{background-image:url(../img/benz_in3.png); z-index:80;}

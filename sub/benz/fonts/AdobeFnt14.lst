@@ -1,0 +1,25 @@
+%!Adobe-FontList 1.14
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:BrushScriptStd
+FamilyName:Brush Script Std
+StyleName:Medium
+FullName:Brush Script Std Medium
+MenuName:Brush Script Std
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\Drive\NCS웹디자인\벤츠\Font\BrushScriptStd.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:37060
+FileModTime:1327563534
+WeightClass:500
+WidthClass:5
+AngleClass:1
+DesignSize:180
+%EndFont
+

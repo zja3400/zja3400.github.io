@@ -1,0 +1,555 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+::selection {
+    background-color: #666;
+    color: #fff;
+}
+
+#intro {
+    position: fixed;
+    top: 0; left: 0;
+    overflow-y: hidden;
+    display: flex;
+    justify-content:center;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 100000;
+}
+
+.c1,
+.c2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: transparent;
+    border-radius: 50%;
+}
+
+.c1 {
+    width: 47px;
+    height: 47px;
+    border-bottom: 3px solid #fff;
+    border-top: 3px solid #fff;
+    animation: intro 3s infinite;
+}
+
+.c2 {
+    width: 47px;
+    height: 47px;
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+    animation: intro 3s infinite;
+}
+
+@keyframes intro {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes intro2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg)
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.intro-p {
+    margin-top: 6rem;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid #000;
+    background: rgba(0,0,0,.8);
+    z-index: 1000;
+}
+
+.fixed .fixed_cover{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.fixed h1{
+    width: 5%;
+    margin-left: 3%;
+    margin-top: .8%;
+}
+
+.fixed .nav li{
+    margin-top: .8rem;
+}
+
+#wrap {
+    margin: 2rem auto;
+    max-width: 100rem;
+    box-shadow: 6px 0px 3px rgba(0, 0, 0, .8), -6px 0px 3px rgba(0, 0, 0, .8);
+}
+
+body {
+    background-image: url(../img/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*header 시작부분=====================================*/
+header {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header nav {
+    overflow: hidden;
+    margin: 1.5rem auto;
+    padding-bottom: 1rem;
+    max-width: 90rem;
+    border-bottom: 1px solid #fff;
+}
+
+header nav h1 {
+    overflow: hidden;
+    display: inline-block;
+    width: 10%;
+
+}
+
+header nav h1:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+header nav h1 img {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+header nav .nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav .nav li {
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+header nav .nav li a {
+    display: block;
+    padding: 1rem 5rem;
+    font-size: .8rem;
+    color: #fff;
+}
+
+header nav .nav li a:hover {
+    opacity: .4;
+    text-shadow: 2px 2px 2px #000;
+}
+
+header .header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 90rem;
+    height: 80%;
+}
+
+header .header .header-p {
+    margin: 2rem 0;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .8rem;
+    color: #fff;
+}
+
+header .header .header-p2 {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    color: #fff;
+}
+
+header .header .header-p3 {
+    position: absolute;
+    left: -3rem;
+    text-align: center;
+    font-size: .3rem;
+    letter-spacing: .6rem;
+    color: #fff;
+    transform: rotate(-90deg);
+}
+
+header .header .scroll-c {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+header .header .scroll {
+    margin: 0 auto;
+    width: 25px;
+    height: 36px;
+    border-radius: 15px;
+    border: 3px solid #fff;
+}
+
+header .header .scroll .scroll-in {
+    margin: 6px auto;
+    width: 3px;
+    height: 6px;
+    background-color: #fff;
+    animation: scroll 2s infinite;
+}
+
+header .header h5 {
+    margin: .3rem;
+    font-size: .6rem;
+    color: #fff;
+}
+
+/*header 마지막부분=====================================*/
+
+/*section 시작부분=====================================*/
+section {
+    background-color: #fff;
+}
+
+section .about {
+    margin: 0rem auto 3rem auto;
+    padding-top: 3rem;
+    max-width: 90rem;
+    text-align: center;
+}
+
+section .about h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .about h3:after {
+    content: "";
+    display: block;
+    margin: 1rem auto;
+    width: 3%;
+    height: 1px;
+    background-color: #000;
+}
+
+section .about .photo {
+    position: relative;
+    margin: 2rem auto;
+    width: 15%;
+    height: 200px;
+    background-image: url(../img/me.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+section .about .photo:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    z-index: 10
+}
+
+section .about .section-p {
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
+section .about .section-p .text {
+    display: block;
+    margin: 2rem auto;
+    width: 80%;
+    font-size: .7rem;
+    color: #666
+}
+
+section .pf {
+    overflow: hidden;
+}
+
+section .pf .item-row {
+    display: flex;
+}
+
+section .pf .item-row .con {
+    flex: 1;
+    height: 400px;
+    text-align: center;
+}
+
+section .pf .item-row .con .item-in {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+section .pf .item-row .con .item-in a {
+    display: block;
+    padding: 1rem 3rem;
+    color: #fff;
+    font-size: .7rem;
+    border: 1px solid #fff;
+    box-shadow: 2px 1px 1px #000;
+    transition: all .5s;
+}
+
+section .pf .item-row .con .item-in a:hover {
+    background-color: #fff;
+}
+
+section .pf .item-row .con .item-in a:hover span {
+    color: #000;
+}
+
+section .pf .item-row .con .item-in a span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all .3s;
+}
+
+section .pf .item-row .con .item-in:hover a {
+    color: #fff;
+}
+
+section .pf .item-row .con .item-in:hover a span {
+    display: inline-block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+section .pf .item-row .item1,
+section .pf .item-row .item4,
+section .pf .item-row .item5,
+section .pf .item-row .item8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f7f7f7;
+}
+
+section .pf .item-row h3 {
+    letter-spacing: .8rem;
+}
+
+section .pf .item-row h3:after {
+    content: "";
+    display: block;
+    margin: 1rem auto 1rem auto;
+    width: 30px;
+    height: 1px;
+    background-color: #000;
+}
+
+section .pf .item-row .item-p {
+    color: #666;
+}
+
+section .pf .item-row .p1 {
+    display: block;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+section .pf .item-row .p2 {
+    display: block;
+    margin: 1rem;
+    font-size: .7rem;
+}
+
+section .pf .item-row .p3 {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    line-height: 1.2rem;
+    font-size: .7rem;
+}
+
+section .pf .item-row .item2 {
+    background-image: url(../img/con-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section .pf .item-row .item2:hover .item-in {
+    display: flex;
+}
+
+section .pf .item-row .item3 {
+    background-image: url(../img/con-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section .pf .item-row .item3:hover .item-in {
+    display: flex;
+}
+
+section .pf .item-row .item6 {
+    background-image: url(../img/con-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section .pf .item-row .item6:hover .item-in {
+    display: flex;
+}
+
+section .pf .item-row .item7 {
+    background-image: url(../img/con-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section .pf .item-row .item7:hover .item-in {
+    display: flex;
+}
+
+section .contact {
+    margin: 3rem auto 0rem auto;
+    padding-bottom: 3rem;
+    max-width: 90rem;
+    text-align: center;
+}
+
+section .contact h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .contact h3:after {
+    content: "";
+    display: block;
+    margin: 1rem auto;
+    width: 3%;
+    height: 1px;
+    background-color: #000;
+}
+
+section .contact .contact-p {
+    margin: 1rem auto 0 auto;
+    color: #666;
+    font-size: .8rem;
+    line-height: 1.4rem;
+}
+
+section .contact a {
+    display: block;
+    margin: 1rem auto 1rem auto;
+    padding: .7rem .8rem;
+    width: 15%;
+    color: #666;
+    font-size: .8rem;
+    border: 1px solid #666;
+    transition: all .5s;
+}
+
+section .contact a:hover {
+    color: #fff;
+    background-color: #666;
+}
+
+/*section 마지막부분=====================================*/
+
+/*footer 시작부분=====================================*/
+footer {
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: #000;
+}
+
+footer .footer-p {
+    line-height: 1.1rem;
+    color: #e7e7e7;
+    font-size: .7rem;
+    letter-spacing: .2rem;
+}
+
+/*footer 마지막부분=====================================*/
+
+
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+}

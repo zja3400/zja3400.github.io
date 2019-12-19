@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="THEJOENMEDIA 포트폴리오">
+    <meta name="description" content="포트폴리오 용도로 만들어진 홈페이지 입니다.">
+    <title>더조은미디어 - 사람이 먼저다</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <link rel="stylesheet" type="text/css" href="css/m_m.css">
+    <link rel="stylesheet" type="text/css" href="css/m_t.css">
+    <link rel="stylesheet" type="text/css" href="css/m_p.css">
+    <link rel="shortcut icon" type="img/x-ico" href="img/pavicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:700" rel="stylesheet">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!--오른쪽 fix active-->
+    <ul id="menu">
+        <li data-menuanchor="HOME" class="active"><a href="#HOME"></a></li>
+        <li data-menuanchor="PROMARKETER"><a href="#PROMARKETER"></a></li>
+        <li data-menuanchor="MARKETING"><a href="#MARKETING"></a></li>
+        <li data-menuanchor="PROFESSIONAL"><a href="#PROFESSIONAL"></a></li>
+        <li data-menuanchor="CONSULTING"><a href="#CONSULTING"></a></li>
+        <li data-menuanchor="US"><a href="#US"></a></li>
+    </ul>
+    <!--오른쪽 fix active 끝-->
+    <!--로고&햄버거&스크롤&상담신청 메뉴-->
+    <nav>
+        <h1>
+            <a href="#none">
+				<img src="img/logo_white.png" alt="로고">
+			</a>
+        </h1>
+    </nav>
+    <div class="container">
+        <div class="rightNav">
+            <div class="menu-toggle">
+                <img src="img/sub_nav.png" alt="햄버거바">
+            </div>
+        </div>
+        <div class="bottomNav">
+            <form name="ufrm1" method="post" target="" action="" onsubmit="selectCheckBox1(); return false;">
+                <ul class="menu">
+                    <li> <a href="#none" style="font-family: 'Nanum Gothic', sans-serif;">성함(업체명) : </a><br><input type="text" name="name" placeholder=" * 성함"></li>
+                    <li> <a href="#none" style="font-family: 'Nanum Gothic', sans-serif;">전화번호 : </a><br>
+                        <select name="tel1">
+                            <option value="010">010</option>
+                            <option value="010">011</option>
+                            <option value="010">016</option>
+                            <option value="010">017</option>
+                            <option value="010">018</option>
+                        </select>
+                        <input type="tel" name="tel2" placeholder=" * 번호" onKeyUp="if ( isNaN(this.value) ) { alert('숫자만 입력가능합니다.'); this.value=''; }" maxlength="4">
+                        <input type="tel" name="tel3" placeholder=" * 번호" onKeyUp="if ( isNaN(this.value) ) { alert('숫자만 입력가능합니다.'); this.value=''; }" maxlength="4">
+                    </li>
+                    <li> <a href="#none" style="font-family: 'Nanum Gothic', sans-serif;">문의사항 : </a><br><textarea name="etc"></textarea></li>
+                    <li><a href="javascript:selectCheckBox1();" class="l_btn"><strong style="font-family: 'Nanum Gothic', sans-serif;">상담신청</strong></a></li>
+                    <li>
+                        <img src="img/bttomntn_t.png" alt="상담내용">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!--로고&햄버거&스크롤 메뉴 끝-->
+    <!--fullpage wrap 시작-->
+    <div id="wrap">
+        <!--header 시작-->
+        <header class="section">
+            <div class="header_text">
+                <p class="header_p">
+                    <img src="img/text.png" alt="마케팅이 필요할때, 사업을 하려니 홍보가 막막해요">
+                    <a href="#none" class="main_btn1">
+					<img src="img/main_btn.png" alt="버튼">
+				</a>
+                </p>
+            </div>
+            <div class="scroll">
+                <a href="#">
+				<img src="img/scroll_white.png" alt="스크롤롤링">
+			</a>
+            </div>
+        </header>
+        <!--header 끝-->
+        <!--section_1 시작-->
+        <section class="section_1 section section-one">
+            <div class="scroll">
+                <a href="#">
+				<img src="img/scroll_black.png" alt="스크롤롤링">
+			</a>
+            </div>
+            <div class="pad">
+                <img src="img/ipad.png" alt="아이패드">
+            </div>
+            <!--pad-->
+            <div class="section_text">
+                <p class="section_p">
+                    <img src="img/text2.png" alt="디지털모든것" class="digital">
+                    <img src="img/m.text2.png" alt="디지털모든것" class="digital_2">
+                </p>
+            </div>
+            <!--section_text-->
+        </section>
+        <!--section_1 끝-->
+        <section class="section_2 section section-two">
+            <div class="scroll">
+                <a href="#">
+				<img src="img/scroll_black.png" alt="스크롤롤링">
+			</a>
+            </div>
+            <div class="phone slide-one">
+                <img src="img/phone.png" alt="핸드폰">
+            </div>
+            <!--phone-->
+            <div class="section2_text">
+                <p class="section2_p">
+                    <img src="img/text3.png" alt="비싼마케팅비용?" class="market">
+                    <img src="img/m.text3.png" alt="비싼마케팅비용?" class="market_2">
+                </p>
+            </div>
+        </section>
+        <!--section_2 시작-->
+        <section class="section_3 section section-three">
+            <div class="scroll">
+                <a href="#">
+				<img src="img/scroll_white.png" alt="스크롤롤링">
+			</a>
+            </div>
+            <div class="section3_text">
+                <p class="section3_p">
+                    <img src="img/text4.png" alt="어떠한 홍보도">
+                </p>
+            </div>
+        </section>
+        <!--section_3-->
+        <section class="section_4 section section-four">
+            <div class="scroll">
+                <a href="#">
+				<img src="img/scroll_white.png" alt="스크롤롤링">
+			</a>
+            </div>
+            <div class="phone_2">
+                <img src="img/phone2.png" alt="핸드폰2">
+            </div>
+            <div class="section4_text">
+                <p class="section4_p">
+                    <img src="img/text5.png" alt="더조은미디어의힘" class="text5">
+                    <img src="img/m.text5.png" alt="더조은미디어의힘" class="m_text5">
+                    <a href="#none" class="main_btn1"><img src="img/main_btn2.png" alt="버튼"></a>
+                </p>
+                <!--section4_p-->
+            </div>
+            <!--section4_text-->
+        </section>
+        <!--section_4-->
+        <section class="section_5 section">
+            <div class="section_5_in"></div>
+            <div class="section5_text">
+                <p class="section5_p">
+                    <img src="img/text6.png" alt="푸터">
+                </p>
+                <!--section5_p-->
+                <!--다음MAP시작-->
+                <div id="map">
+                    <div id="daumRoughmapContainer1521425466496" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+                    <script>
+                        new daum.roughmap.Lander({
+                            "timestamp": "1521425466496",
+                            "key": "n9uc",
+                        }).render();
+
+                    </script>
+                </div>
+                <!--다음MAP시작 끝-->
+            </div>
+            <!--section5_text-->
+        </section>
+        <!--section_5-->
+    </div>
+    <!--wrap-->
+    <!--fullpage wrap 시작 끝-->
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+/*마우스호버 효과 에니메이션*/
+
+@keyframes translateHover {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+        -webkit-transform: translate3d(0, -20px, 0);
+        -moz-transform: translate3d(0, -20px, 0);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translate3d(0, 20px, 0);
+        -webkit-transform: translate3d(0, 20px, 0);
+        -moz-transform: translate3d(0, 20px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -10px, 0);
+        -webkit-transform: translate3d(0, -10px, 0);
+        -moz-transform: translate3d(0, -10px, 0);
+    }
+
+    80% {
+        transform: translate3d(0, 0px, 0);
+        -webkit-transform: translate3d(0, 0px, 0);
+        -moz-transform: translate3d(0, 0px, 0);
+    }
+
+    85%,
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+    }
+}
+
+@-webkit-keyframes translateHover {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+        -webkit-transform: translate3d(0, -20px, 0);
+        -moz-transform: translate3d(0, -20px, 0);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translate3d(0, 20px, 0);
+        -webkit-transform: translate3d(0, 20px, 0);
+        -moz-transform: translate3d(0, 20px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -10px, 0);
+        -webkit-transform: translate3d(0, -10px, 0);
+        -moz-transform: translate3d(0, -10px, 0);
+    }
+
+    80% {
+        transform: translate3d(0, 0px, 0);
+        -webkit-transform: translate3d(0, 0px, 0);
+        -moz-transform: translate3d(0, 0px, 0);
+    }
+
+    85%,
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+    }
+}
